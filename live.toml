@@ -1,0 +1,30 @@
+[mock_market]
+host = "127.0.0.1"
+feed_port = 8801
+trading_port = 8802
+api_key = "test-key"
+
+tick_seconds = 1.0
+window_ticks = 6
+lag_ticks = 1
+
+fill_delay_ticks = 1
+fill_size_per_tick = 25
+
+spread = 0.02
+depth = 3
+level_size = 200
+
+adapter_poll_interval = 0.05
+
+
+[[strategies]]
+type = "mock"
+enabled = true
+instance_id = "mock-1"
+instrument_id = "mock"
+
+[strategies.params]
+min_edge = 0.10
+[recording]
+enabled = false  # Reserved for future live-orchestrator recording

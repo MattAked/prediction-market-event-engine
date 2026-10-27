@@ -1,0 +1,9 @@
+# Independent research/backtest configuration.
+# Set enabled=true once a concrete historical orchestrator is implemented.
+[[strategies]]
+type = "mock"
+enabled = false
+instance_id = "mock-research-1"
+
+[strategies.params]
+min_edge = 0.10
